@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Learning Journey</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'brJourney/css/main.css' %}">
+</head>
+<body class="journey-page">
+    <h1>My Learning Journey</h1>
+
+    {% if journeys %}
+        {% for journey in journeys %}
+            <div class="journey-box box">
+                <h2>{{ journey.title }}</h2>
+                <p>{{ journey.description }}</p>
+                <p><strong>Started:</strong> {{ journey.date_started }}</p>
+                {% if journey.date_completed %}
+                    <p><strong>Completed:</strong> {{ journey.date_completed }}</p>
+                {% else %}
+                    <p><em>Still learning...</em></p>
+                {% endif %}
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>No learning journeys available yet.</p>
+    {% endif %}
+
+    <p><a href="/about/">About Me →</a></p>
+</body>
+</html>

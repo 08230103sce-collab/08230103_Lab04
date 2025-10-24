@@ -1,0 +1,50 @@
+/* Consolidated styles for the brJourney app */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    text-align: center;
+    padding: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Shared box style used by both pages */
+.box {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 60%;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Slightly different padding for the about page */
+.about-page .box {
+    padding: 25px;
+}
+
+/* Heading colors - default and about page override */
+h1 {
+    color: #2c3e50;
+}
+
+.about-page h1 {
+    color: #e67e22;
+}
+
+/* Page-specific backgrounds */
+.index-page {
+    background-color: #eef5ff;
+}
+
+.about-page {
+    background-color: #fff7e6;
+}

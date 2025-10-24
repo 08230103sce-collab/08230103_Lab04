@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About BirKha Rai</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'brJourney/css/main.css' %}">
+</head>
+<body class="about-page">
+    <h1>About Me</h1>
+
+    {% if abouts %}
+        {% for about in abouts %}
+            <div class="about-box box">
+                <p><strong>Name:</strong> {{ about.name }}</p>
+                <p><strong>Programme:</strong> {{ about.programme }}</p>
+                <p><strong>College:</strong> {{ about.college }}</p>
+                <p>{{ about.bio }}</p>
+                <p>{{ about.goal }}</p>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>No information available yet.</p>
+    {% endif %}
+
+    <p><a href="/">← Back to Home</a></p>
+</body>
+</html>

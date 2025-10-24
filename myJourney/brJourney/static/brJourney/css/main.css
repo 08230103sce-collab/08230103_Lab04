@@ -1,0 +1,57 @@
+/* Main styles for the brJourney app */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    text-align: center;
+    padding: 40px;
+}
+
+.journey-page {
+    background-color: #eef5ff;
+}
+
+.about-page {
+    background-color: #fff7e6;
+}
+
+h1 {
+    color: #2c3e50;
+}
+
+.about-page h1 {
+    color: #e67e22;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.box {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 60%;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.about-box {
+    padding: 25px;
+}
+
+/* Journey specific styles */
+.journey-box h2 {
+    color: #2c3e50;
+    margin-top: 0;
+}
+
+.journey-box em {
+    color: #666;
+    font-style: italic;
+}
